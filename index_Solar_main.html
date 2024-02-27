@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Panel Calculator</title>
+</head>
+<body>
+
+  <!-- Zip Code Input Dialog -->
+  <label for="zipCode">Enter Zip Code:</label>
+  <input type="text" id="zipCode" placeholder="Enter Zip Code">
+  <br><br>
+
+  <!-- Monthly Power Usage Input Dialog -->
+  <label for="powerUsage">Enter Avg Monthly Power Usage (kWh):</label>
+  <input type="number" id="powerUsage" placeholder="Enter Power Usage">
+  <br><br>
+
+  <!-- Roof Facing Sunlight Dropdown Selector -->
+  <label for="roofFacing">Select Roof Facing Sunlight:</label>
+  <select id="roofFacing">
+    <option value="e">East</option>
+    <option value="s">South</option>
+    <option value="w">West</option>
+    <option value="n">North</option>
+    <option value="f">Flat</option>
+  </select>
+  <br><br>
+
+  <!-- Button to Trigger Calculation -->
+  <button onclick="calculate()">Calculate</button>
+
+  <!-- Display Result -->
+  <div id="result"></div>
+
+  <!-- Include JavaScript File -->
+  <script src="./JS/Solar_base.js"></script>
+  <script src="./JS/csvJSON.js"></script>
+</body>
+</html>
